@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main() {
+    int number_to_guess = 50;  // Fixed number to guess
+    int guess = 0;
+
+    while (guess != number_to_guess) {
+        std::cout << "Guess a number between 1 and 100: ";
+        std::cin >> guess;
+        if (guess < number_to_guess) {
+            std::cout << "Too low!\n";
+        } else if (guess > number_to_guess) {
+            std::cout << "Too high!\n";
+        }
+    }
+
+    std::cout << "Congratulations! You guessed the number.\n";
+    return 0;
+}
+
